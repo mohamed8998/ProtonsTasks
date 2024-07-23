@@ -1,3 +1,5 @@
+
+#Simple Calculator
 operator=input("enter an operator(+,-,*,/,%): ")
 x=float(input("enter first number: "))
 y=float(input("enter second number: "))
