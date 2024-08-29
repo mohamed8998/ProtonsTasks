@@ -1,9 +1,3 @@
-def decimal_to_binary(decimal):
-    binary = format(int(decimal),"b")
-    return binary
-print("decimal:",(11))
-print(decimal_to_binary(10))
-
-
-   
-
+binary_number="1011"
+decimal_number = int(binary_number,2)
+print(f"Decimal: {decimal_number}")
