@@ -8,8 +8,8 @@ function Bananas() {
     <Container>
       <h1>Bananas</h1>
       <p>Count: {count}</p>
-      <Button variant="warning" onClick={() => setCount(count + 1)}>Increment</Button>
-      <Button variant="secondary" onClick={() => setCount(count - 1)}>Decrement</Button>
+      <Button variant="warning" onClick={() => setCount(count + 1)}>Add</Button>
+      <Button variant="secondary" onClick={() => setCount(count - 1)}>-</Button>
       <Form.Control
         type="number"
         value={count}

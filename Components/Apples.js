@@ -8,8 +8,8 @@ function Apples() {
     <Container>
       <h1>Apples</h1>
       <p>Count: {count}</p>
-      <Button variant="primary" onClick={() => setCount(count + 1)}>Increment</Button>
-      <Button variant="secondary" onClick={() => setCount(count - 1)}>Decrement</Button>
+      <Button variant="primary" onClick={() => setCount(count + 1)}>Add</Button>
+      <Button variant="secondary" onClick={() => setCount(count - 1)}>-</Button>
       <Form.Control
         type="number"
         value={count}
