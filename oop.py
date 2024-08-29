@@ -66,7 +66,7 @@ contact_book.add_contact(harry)
 contact_book.add_contact(hedwig)
 
 contact_book.list_contacts()
-print(contact_book.find_contact("Harry Potter"))# Base class for Magical Contacts
+print(contact_book.find_contact("Harry Potter"))
 class MagicalContact:
     def __init__(self, name, email, phone_number):
         self.name = name
@@ -114,26 +114,3 @@ class MagicalContactBook:
             if contact.name == name:
                 return contact.describe()
         return "Contact not found."
-
-harry = WizardOrWitch(
-    name="Harry Potter",
-    email="harry@hogwarts.edu",
-    phone_number="1234567890",
-    wand="11 inches, Holly, phoenix feather",
-    house="Gryffindor")
-
-
-hedwig = MagicalCreature(
-    name="Hedwig",
-    email="hedwig@owls.post",
-    phone_number="0987654321",
-    species="Owl",
-    is_tame=True )
-
-
-contact_book = MagicalContactBook()
-contact_book.add_contact(harry)
-contact_book.add_contact(hedwig)
-
-contact_book.list_contacts()
-print(contact_book.find_contact("Harry Potter"))
