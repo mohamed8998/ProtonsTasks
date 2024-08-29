@@ -6,9 +6,9 @@ function Strawberries() {
 
   return (
     <Container>
-      <h1>Bananas</h1>
+      <h1>Strawberries</h1>
       <p>Count: {count}</p>
-      <Button variant="warning" onClick={() => setCount(count + 1)}>Add</Button>
+      <Button variant="success" onClick={() => setCount(count + 1)}>Add</Button>
       <Button variant="secondary" onClick={() => setCount(count - 1)}>-</Button>
       <Form.Control
         type="number"
