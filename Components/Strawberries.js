@@ -2,19 +2,19 @@ import React, { useState } from 'react';
 import { Container, Button, Form } from 'react-bootstrap';
 
 function Strawberries() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0);  //count  القيمة الحالية // set count لتحديث القيمة
 
   return (
     <Container>
       <h1>Strawberries</h1>
-      <p>Count: {count}</p>
-      <Button variant="success" onClick={() => setCount(count + 1)}>Add</Button>
-      <Button variant="secondary" onClick={() => setCount(count - 1)}>-</Button>
-      <Form.Control
-        type="number"
-        value={count}
-        onChange={(e) => setCount(Number(e.target.value))}
-        style={{ width: '100px', marginTop: '10px' }}
+      <p>Count: {count}</p>  {/* Display the current number of strawberries*/}
+      <Button variant="success" onClick={() => setCount(count + 1)}>Add</Button>  {/* Add a button to increase a number and variable allow you to define the styles can used colors */}
+      <Button variant="secondary" onClick={() => setCount(count - 1)}>-</Button>  {/* Add a button to decrease a number and variable allow you to define the styles can used colors */}
+      <Form.Control // Enter a specific number
+        type="number"  // Input type as number
+        value={count}   // Bind a value to a state count
+        onChange={(e) => setCount(Number(e.target.value))}  // Update count status with the new value
+        style={{ width: '100px', marginTop: '10px' }}  // styling the width and marigin top
       />
     </Container>
   );
